@@ -1,3 +1,93 @@
-.componentName {
+.landing {
+    width: 80vw;
+    margin: 0 auto;
 
+    & h1 {
+        font-size: 3em;
+        text-align: center;
+        margin: 2em;
+    }
+    & > ul {
+        padding: 0;
+        list-style: none;
+
+        & > li {
+            margin: 0;
+        }
+    }
+
+}
+.mainTile {
+    display: flex;
+    align-items: flex-start;
+
+    & img {
+        width: 60%;
+        margin-right: 10px;
+    }
+    & .title {
+        font-size: 2em;
+        font-weight: 300;
+    }
+    & .info {
+        border-top: 1px solid #eee;
+        padding: 15px 15px 0;
+    }
+}
+
+.socialList {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+    align-items:stretch;
+    justify-content: flex-start;
+    background: #eee;
+    margin: 40px 0;
+
+    & > li {
+        min-width: 30%;
+        padding: 15px 0px 15px 15px;
+
+        &:last-child {
+            padding-right: 15px;
+        }
+    }
+}
+
+.socialTile {
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    background: #fff;
+    height: 100px;
+    position: relative;
+}
+
+.avatar {
+    height: 100px;
+}
+
+.tweet {
+    padding: 5px 5px;
+}
+
+.landing .tileList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 40px 0;
+    & > li {
+        width: 30%;
+    }
+}
+
+.landingTile {
+    box-shadow: none;
 }

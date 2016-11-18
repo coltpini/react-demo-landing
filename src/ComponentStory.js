@@ -4,14 +4,14 @@ import Component from './Component.js';
 const mainTile = {
     title: "Sturgeon, a monster of awesomeness",
     teaser: "Sturgeons are long-lived, late maturing fishes. Their average lifespan is 50 to 60 years. They have a heterocercal caudal fin similar to that of sharks, and an elongated spindle-like body that is smooth-skinned, scaleless and armored with 5 lateral rows of bony plates called scutes. Several species can grow quite large, typically ranging 7–12 feet (2-3½ m) in length. The largest sturgeon on record was a Beluga female captured in the Volga estuary in 1827, weighing 1,571 kg (3,463 lb) and 7.2 m (24 ft) long.",
-    img: "https://nature.mdc.mo.gov/sites/default/files/styles/centered_full/public/media/images/2010/10/lake_sturgeon_10-29-10.jpg?itok=Ff5Y2AGQ"
+    img: "http://media01.bigblackbag.net/56633/portfolio_media/lwsm_new-jersey-magazine-_421.jpg"
 };
 const tiles = [
     {
         className: "passedInClass",
         title: "The Bonefish, an amazing fish!",
         teaser: "Fly fishing for bonefish, called bonefishing, is a popular sport in the Bahamas and southern Florida. Since bonefish live in shallow inshore water, fishing may be done by wading or from a shallow-draft boat.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Bonefish.png"
+        img: "http://www.greenwichworkshop.com/catalogue/nov06/images/art/bonefish.jpg"
     },{
         title: "The anadromous Stealhead",
         teaser: "Rainbow trout / Steelhead are ray-finned fishes in the salmon family, and they are one of the top sport fish in North America. Rainbow trout and steelhead are the same species, but Steelhead are anadromous, meaning they spend part of their lives in the sea",
@@ -27,7 +27,7 @@ const tiles = [
     },{
         title: "Cutthroat",
         teaser: "Cutthroat trout are native to western North America. Native cutthroat trout species are found along the Pacific Northwest coast from Alaska through British Columbia into northern California, in the Cascade Range, the Great Basin and throughout the Rocky Mountains including southern Alberta",
-        img: "http://1.bp.blogspot.com/-OgWFMB_IkTo/U6ukUUuwlVI/AAAAAAAAA8k/a09NgmA7w10/s1600/Yellowstone-Cutthroat.jpg"
+        img: "https://www.fws.gov/fisheries/fishguide/images/originals/west_cold/Lahonton_cutthroat_trout_JosephRTomelleri_copyright.png"
     },{
         title: "Brown Trout, the vast",
         teaser: "The brown trout (Salmo trutta) is a European species of salmonid fish that has been widely introduced into suitable environments globally. It includes both purely freshwater populations as well as anadromous forms known as the sea trout. ",
@@ -63,7 +63,7 @@ storiesOf('Component', module)
     .add('test one', () => (
         <Component
             className="testClass"
-            title="The amazing landing page"
+            title="What fish do you like?"
             tiles={tiles}
             mainTile={mainTile}
             socialItems={socialItems}

@@ -6,15 +6,20 @@ import Tile from 'colt-demo-tile';
 const MainTile = ({img,title,teaser}) => (
     <div className={styles.mainTile}>
         <img src={img} />
-        <span className={styles.title}>{title}</span>
-        <p className={styles.teaser}>{teaser}</p>
+        <div className={styles.info}>
+            <span className={styles.title}>{title}</span>
+            <p className={styles.teaser}>{teaser}</p>
+        </div>
     </div>
 );
+
 const SocialTile = ({handle, avatar, message}) => (
     <div className={styles.socialTile}>
         <img className={styles.avatar} src={avatar} />
-        <span className={styles.handle}>{handle}</span>
-        <p className={styles.message}>{message}</p>
+        <div className={styles.tweet}>
+            <span className={styles.handle}>{handle}</span>
+            <p className={styles.message}>{message}</p>
+        </div>
     </div>
 );
 
@@ -23,14 +28,12 @@ class Component extends ReactComponent {
         const {className, title, tiles, mainTile, socialItems} = this.props;
 
         return (
-            <div className={classes(className, styles.componentName)}>
+            <div className={classes(className, styles.landing)}>
                 <h1 className={styles.title}>{title}</h1>
                 <MainTile {...mainTile} />
                 <ul className={styles.socialList}>
                     {socialItems.map( (item, i) => (
-                        <li key={i}>
-                            <SocialTile {...item} />
-                        </li>
+                        <li key={i}><SocialTile {...item} /></li>
                     ))}
                 </ul>
                 <ul className={styles.tileList}>
@@ -44,7 +47,5 @@ class Component extends ReactComponent {
         )
     }
 }
-
-
 
 export default Component;
