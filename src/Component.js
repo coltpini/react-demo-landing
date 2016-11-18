@@ -25,7 +25,7 @@ const SocialTile = ({handle, avatar, message}) => (
 
 class Component extends ReactComponent {
     render() {
-        const {className, title, tiles, mainTile, socialItems} = this.props;
+        const {className, title, tiles=[], mainTile, socialItems=[]} = this.props;
 
         return (
             <div className={classes(className, styles.landing)}>

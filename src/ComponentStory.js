@@ -69,3 +69,10 @@ storiesOf('Component', module)
             socialItems={socialItems}
         />
     ))
+    .add('test two', () => (
+        <Component
+            className="testClass"
+            title="What fish do you like?"
+            mainTile={mainTile}
+        />
+    ))
